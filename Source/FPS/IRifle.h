@@ -11,8 +11,6 @@ UINTERFACE(MinimalAPI)
 class UIRifle : public UInterface
 {
 	GENERATED_BODY()
-		//실제 인터페이스가 아니며 리플렉션 시스템에 등록시키기 위한 클래스
-		//건드리면 안된다.
 };
 
 /**

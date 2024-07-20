@@ -11,13 +11,11 @@ void URestartWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
 
-	// Bind the restart button click event
 	if (RestartButton)
 	{
 		RestartButton->OnClicked.AddDynamic(this, &URestartWidget::OnRestartButtonClicked);
 	}
 
-	// Bind the quit button click event
 	if (QuitButton)
 	{
 		QuitButton->OnClicked.AddDynamic(this, &URestartWidget::OnQuitButtonClicked);

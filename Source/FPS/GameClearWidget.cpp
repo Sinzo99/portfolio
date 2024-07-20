@@ -11,13 +11,11 @@ void UGameClearWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
 
-	// Bind the restart button click event
 	if (RestartButton)
 	{
 		RestartButton->OnClicked.AddDynamic(this, &UGameClearWidget::OnRestartButtonClicked);
 	}
 
-	// Bind the quit button click event
 	if (QuitButton)
 	{
 		QuitButton->OnClicked.AddDynamic(this, &UGameClearWidget::OnQuitButtonClicked);

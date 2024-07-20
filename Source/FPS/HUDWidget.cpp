@@ -22,7 +22,6 @@ void UHUDWidget::UpdateHUDWidget()
 {
 	HealthBar->SetPercent(Gunner->GetCurrentHp() / Gunner->GetMaxHp());
 
-	//소수점같은 자리수의 포멧을 지정하는 구조체
 	FNumberFormattingOptions Opts;
 	Opts.SetMaximumFractionalDigits(0); //소수점 표기 안함
 

@@ -29,7 +29,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	//입력처리 함수(컨트롤러와 연결되있으면 입력 처리 안함)
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 private:
 	UPROPERTY(VisibleDefaultsOnly, Category = "Camera")
@@ -40,7 +39,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
 		class UInventoryComponent* InventoryComponent;
 private: //입력함수
-	//축매핑 함수는 float형매개변수 1개를 넣어줘야 한다.
 	UFUNCTION()
 		void MoveForward(float Axis);
 	UFUNCTION()
@@ -117,7 +115,6 @@ private:
 		class USpringArmComponent* MinimapArm;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "MiniMap", meta = (AllowPrivateAccess = true))
 		class USceneCaptureComponent2D* MinimapCamera;
-	//보고 있는 화면을 텍스쳐에 저장할 수 있는 카메라
 private:
 	UPROPERTY(EditDefaultsOnly, Category = "Minimap")
 		TSubclassOf<class UUserWidget> MinimapClass;

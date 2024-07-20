@@ -35,8 +35,8 @@ ABullet::ABullet()
 	Mesh->SetRelativeScale3D(FVector(1, 0.025f, 0.025f));
 	Mesh->SetupAttachment(Root);
 
-	Projectile->InitialSpeed = 40000.f; //2만
-	Projectile->MaxSpeed = 40000.f; //2만
+	Projectile->InitialSpeed = 40000.f; //4만
+	Projectile->MaxSpeed = 40000.f; //4만
 	Projectile->ProjectileGravityScale = 0.f;
 	Projectile->SetUpdatedComponent(Root);
 	InitialLifeSpan = 10.f; //10초 후 액터 제거
